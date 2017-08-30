@@ -19,5 +19,3 @@ fi
 
 
 rm $(grep -lir "DELETE ME!")
-
-
