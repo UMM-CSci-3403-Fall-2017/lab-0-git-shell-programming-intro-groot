@@ -9,13 +9,17 @@ here=$(tar -tzf $FILE | head -1 | cut -f1 -d"/")
 echo $here
 
 cd $tmp_dir/$here
-ls
+
 if [ "$here" == "little_dir" ]
 then
+	cleaned="cleaned_"
+	cleaned_filename="$cleaned$here"
+	echo $cleaned_filename
 	echo "got here"
 	pwd
 fi
 
-
-
 rm $(grep -lir "DELETE ME!")
+
+echo "Removed Delete me!"
+
