@@ -1,5 +1,6 @@
 #!/usr/bin/bash
-
+#This takes a zip and uncompresses the files, cleans out the file containing "DELETE ME!"
+#text, then makes a file called "cleaned_FILENAME" ex, "cleaned_big_dir.tgz"
 
 FILE=$1
 tmp_dir=$2
